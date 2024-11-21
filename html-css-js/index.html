@@ -1,0 +1,224 @@
+<html>
+    <head>
+        <title>Dashboard</title>
+    </head>
+    <style>
+        .header{
+            background-color: palevioletred;
+            color: white;
+            padding: 3px;
+
+        }
+        .header1{
+            background-color: rgb(135, 197, 235);
+            color: white;
+            margin: 0%;
+            padding: 6px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+       
+      .search-cart{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .search-cart input{
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid;
+      }
+      .search-cart img{
+        cursor:pointer;
+      }
+      .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+        margin: 20px;
+      }
+        .card{
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 20px;
+            flex: 1;
+        }
+        .profile{
+           display: flex;
+           align-items: center;
+           margin-bottom: 20px;
+        }
+        .profile img{
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin-right: 15px;
+        }
+        .details{
+            font-size: 20px;
+        }
+        .box-container {
+            display:flex;
+            gap: 20px; 
+            flex-wrap: wrap;
+        }
+      
+        .box{
+            background-color: rgb(100, 198, 237);
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+            flex: 1;
+
+        }
+        .box h4{
+            font-size: 18px;
+            color: #0040ff;
+        }
+        .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button {
+    background-color: mediumvioletred;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: darkviolet;
+}
+        
+        .signatory-container {
+            display:flex;
+            flex-wrap: wrap;
+            gap: 20px; 
+        }
+        
+        .signatory-card{
+            background-color:rgb(100, 198, 237);
+            padding: 10px;
+            text-align: center;
+            border-radius: 8px;
+            width: 150px;
+        }
+        .signatory-card img{
+            border-radius :50%;
+            width: 70px;
+            height: 70px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .button {
+            background-color: mediumvioletred;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px; 
+        }
+
+        .button-wrapper {
+            text-align: left; 
+        }
+
+        .button:hover {
+            background-color: darkviolet; 
+        }
+    </style>
+<body>
+    <div class="header">
+        <p>My Will</p>
+    </div>
+    <div class="header1">
+        <div>
+        <h3>Good Morning Sathya!</h3>
+        <p>Today is 20 November 2024</p>
+    </div>
+        <div class="search-cart">
+            <input type="text" placeholder="search" required>
+        <img src="./img/bell" width="30px" height="30px">
+        <img src="./img/settings" width="30px" height="30px">
+        <img src="./img/exit" width="30px" height="30px">
+    </div>
+</div>
+<div class="container"> 
+<div class="card">
+    <div class="profile">
+        <img src="./img/profile" class="rounded-circle">
+    
+<div class="details">
+    <h3>Ethan Will</h3>
+    <p>Date of Creation:20-11-2024</p>
+   <p> Status: Complete</p>
+   <h3>₹ 2.5 Lakhs</h3>
+   <p>Worth assets onnly</p>
+</div>
+</div>
+<div class="box-container">
+    <div class="box">
+        <h4>10</h4>
+        <p>Active Assets</p>
+    </div>
+   <div class="box">
+    <h4>3</h4>
+    <p>Active Liabilities</p>
+   </div>
+    <div class="box">
+     <h4>15</h4>
+     <p>Active Beneficiaries</p>
+    </div>
+    <div class="box">
+     <h4>3</h4>
+     <p>Active Signatories</p>
+    </div>
+</div>
+
+
+
+</div>
+<div class="card">
+    <h3>Signatory Will</h3>
+    <div class="signatory-container">
+        <div class="signatory-card">
+            <img src="./img/profile" alt="Signatory Will">
+            <h4>Liam</h4>
+            <p>Witness</p>
+            <p>Date: 28.04.2013</p>
+            <p>Status: Complete </p>
+        </div>
+        <div class="signatory-card">
+            <img src="./img/profile" alt="Signatory Will">
+            <h4>Liam</h4>
+            <p>Witness</p>
+            <p>Date: 28.04.2013</p>
+            <p>Status: Complete </p>
+        </div>
+        <div class="signatory-card">
+            <img src="./img/profile" alt="Signatory Will">
+            <h4>Liam</h4>
+            <p>Witness</p>
+            <p>Date: 28.04.2013</p>
+            <p>Status: Complete </p>
+        </div>
+    </div>
+
+
+</div>             
+</div>
+    
+  
+</body>
+</html>
