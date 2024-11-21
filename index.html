@@ -1,0 +1,131 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Beneficiary</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <style>
+            .sidebar {
+                background-color: #003366;
+                color: white;
+                height: 100vh;
+                padding: 20px;
+            }
+            .status-active {
+                color: green;
+            }
+            .status-inactive {
+                color: red;
+            }
+            .btn-purple {
+                color: white;
+                background-color: blueviolet;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+               
+                <div class="col-md-3 sidebar">
+                    <div class="text-center">
+                        <img src="./img/profile" class="rounded-circle"  width="200px" alt="User">
+                    </div>
+                    <h5 class="mt-3">D.O.C: 02.05.2024</h5>
+                    <h6>Status: Complete</h6>
+                    <button class="btn btn-light">Back Home</button>
+                </div>
+
+                
+                <div class="col-md-9">
+                    <div class="mt-4">
+                        <button class="btn btn-sm btn-purple">Add Beneficiaries</button>
+                        <button class="btn btn-sm btn-purple">Add Asset</button>
+                        <button class="btn btn-sm btn-purple">Add Liability</button>
+                        <button class="btn btn-sm btn-purple">Create Links</button>
+                        <button class="btn btn-sm btn-purple">Add Signatures</button>
+                        <button class="btn btn-sm btn-purple">Will Generation</button>
+                    </div>
+
+                    <div class="mt-4">
+                        <table class="table table-bordered">
+                            
+                                <tr>
+                                    <th>S. No</th>
+                                    <th>Name</th>
+                                    <th>Relationship</th>
+                                    <th>Date of Birth</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                           
+                                <tr>
+                                    <td>1</td>
+                                    <td>Divya</td>
+                                    <td>Sister</td>
+                                    <td>1996-12-08</td>
+                                    <td><div class="status-active">Active</div></td>
+                                    <td>
+                                        <button class="btn btn-sm btn-primary">Edit</button>
+                                        <button class="btn btn-sm btn-danger">Delete</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Anu</td>
+                                    <td>Sister</td>
+                                    <td>1998-09-08</td>
+                                    <td><div class="status-inactive">Inactive</div></td>
+                                    <td>
+                                        <button class="btn btn-sm btn-primary">Edit</button>
+                                        <button class="btn btn-sm btn-danger">Delete</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Atchaya</td>
+                                    <td>Sister</td>
+                                    <td>2003-05-23</td>
+                                    <td><span class="status-active">Active</span></td>
+                                    <td>
+                                        <button class="btn btn-sm btn-primary">Edit</button>
+                                       <button class="btn btn-sm btn-danger">Delete</button>
+                                    </td>
+                                </tr>
+                          
+                        </table>
+                    </div>
+
+                    <div class="card mt-4">
+                        <div class="card-body">
+                            <form action="#" method="POST">
+                                <div class="mb-3">
+                                    <label for="Add Beneficiary" class="form-label"><bold>Add Beneficiary</bold></label><br>
+                                    <label for="sno" class="form-label">S.No</label>
+                                    <input type="text" id="sno" class="form-control" placeholder="Enter S.No" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">First Name</label>
+                                    <input type="text" id="name" class="form-control" placeholder="Enter Name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="relationship" class="form-label">Relationship</label>
+                                    <input type="text" id="relationship" class="form-control" placeholder="Enter Relationship" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="dob" class="form-label">Date of Birth</label>
+                                    <input type="date" id="dob" class="form-control" required>
+                                </div>
+                                <button type="submit" class="btn btn-purple">Add Beneficiary</button>
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
