@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diary</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+    <style>
+        body {
+            background-image: url('./img/Diary');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            margin: 0;
+        }
+    </style>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">My App</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="todo-list.html">To-Do List</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="diary.html">Diary</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="logout.html">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Diary Page Content -->
+    <div class="container mt-5">
+        <h1 class="text-center">Diary</h1>
+
+        <!-- Write Diary Entry Form -->
+        <div class="card mt-4">
+            <div class="card-body">
+                <form action="#" method="POST">
+                    <div class="mb-3">
+                        <label for="entryTitle" class="form-label">Diary Title</label>
+                        <input type="text" id="entryTitle" class="form-control" placeholder="Enter diary title" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="entryContent" class="form-label">Diary Content</label>
+                        <textarea id="entryContent" class="form-control" rows="5" placeholder="Write your diary entry here..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add Entry</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Display Diary Entries -->
+        <div class="mt-5">
+            <h2>Past Entries</h2>
+            <ul class="list-group">
+                <!-- Placeholder Diary Entries -->
+                <li class="list-group-item">
+                    <h5>Title 1 - <small>2024-10-18</small></h5>
+                    <p>Study Holidays</p>
+                    <div>
+                        <button class="btn btn-warning btn-sm">Edit</button>
+                        <button class="btn btn-danger btn-sm">Delete</button>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <h5>Title 2 - <small>2024-10-24</small></h5>
+                    <p>Semster Exam Starts</p>
+                    <div>
+                        <button class="btn btn-warning btn-sm">Edit</button>
+                        <button class="btn btn-danger btn-sm">Delete</button>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <h5>Title 3 - <small>2024-10-12</small></h5>
+                    <p>Semster Exam Ends</p>
+                    <div>
+                        <button class="btn btn-warning btn-sm">Edit</button>
+                        <button class="btn btn-danger btn-sm">Delete</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center mt-5">
+        <p>&copy; 2024 Diary App. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
