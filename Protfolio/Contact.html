@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #80cfff;
+            color: #333;
+        }
+        nav {
+            background-color: #1e1e1e;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            margin: 0 10px;
+            font-size: 18px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h2 {
+            margin-bottom: 15px;
+            font-size: 28px;
+            color: #444;
+            text-transform: uppercase;
+        }
+        form {
+            margin-bottom: 30px;
+        }
+        label {
+            display: block;
+            text-align: left;
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #1e90ff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #1c86e0;
+        }
+        .social-links ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .social-links ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        .social-links ul li a {
+            color: #1e90ff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .social-links ul li a:hover {
+            text-decoration: underline;
+        }
+        .call-to-action {
+            margin-top: 30px;
+            font-size: 18px;
+            color: #666;
+        }
+        .footer {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+        <a href="resume.html" download>Download CV</a>
+    </nav>
+
+    <div class="container">
+        <h2>Contact Me</h2>
+        <p>If you have any questions or want to discuss a project, feel free to get in touch!</p>
+
+        <form action="mailto:your.email@example.com" method="post" enctype="text/plain">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div class="social-links">
+            <p>Find me on:</p>
+            <ul>
+                <li><a href="#" target="_blank">LinkedIn</a></li>
+            </ul>
+        </div>
+
+        <div class="call-to-action">
+            <p>I'm currently open to full-time opportunities as a software developer.</p>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2024 Sathya Vallinayagam. All rights reserved.</p>
+        </div>
+    </div>
+
+</body>
+</html>
