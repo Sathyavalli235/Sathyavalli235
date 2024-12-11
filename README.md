@@ -1,7 +1,7 @@
 - 👋 Hi, I’m SATHYA.V
 - 👀 I’m interested in Web Development
 - 🌱 I’m currently learning Full Stack Web Development
-- 📫 How to reach me-sathyavallinayagam235@gmail.com
+- 📫 How to reach me sathyavallinayagam235@gmail.com
 
 
 <!---
