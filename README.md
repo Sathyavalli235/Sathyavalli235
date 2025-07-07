@@ -1,4 +1,4 @@
-<img src="gif.gif" alt="MasterHead" width="900" height="200">
+<img src="gif 1.gif" alt="MasterHead" width="900" height="200">
 <h1 align="center">Hi 👋, I'm Sathya Vallinayagam</h1>
 <h3 align="center">Full Stack Developer</h3>
 
